@@ -1,0 +1,6 @@
+docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d --no-deps node-app
+
+docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d --build
+-V to denote anonymous volumes created 
+
+docker logs node_node-app_1 -f 
